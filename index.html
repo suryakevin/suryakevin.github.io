@@ -10,7 +10,6 @@
   <style>
     body {
       background: black;
-      color: gainsboro;
     }
     .main {
       position: absolute;
@@ -18,28 +17,42 @@
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       text-align: center;
+      white-space: nowrap;   
     }
-    .header {
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
-    }
-    .paragraph {
+    .name {
       font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      color: gainsboro;   
+    }
+    .bio {
+      display: flex;
+      flex-flow: row nowrap;
+      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      color: lightgray;
+    }
+    .email-cv {
+      font-family: Arial, helvetica, sans-serif;
+      color: silver;
     }
   </style>
 </head>
 
 <body>
   <div class="main">
-    <img src="https://github.com/suryakevin/suryakevin.github.io/raw/master/profile_picture.jpg" 
-      alt="profile picture" style="width:200px;height:150px;">
-    <div class="header">
+    <img src="profile_picture.jpg" alt="profile picture" 
+      style="width:200px;height:150px;">
+    <div class="name">
       <h1>KEVIN SURYA</h1>
     </div>
-    <div class="paragraph">
-      <p>I'm an Indonesian undergraduate at Montana State University. <br /> 
-        My research focuses on the dinosaur-bird transition <br />  
-        and macroevolutionary modeling.</p>
-     </div>
+    <div class="bio">
+      I'm an Indonesian undergraduate at Montana State University. <br /> 
+      My research focuses on the dinosaur-bird transition and macroevolutionary 
+      modeling.
+    </div>
+    <br />
+    <span class="email-cv">
+      kevin.surya@msu.montana.edu &middot <a href="cv.pdf" style="color: silver; 
+      text-decoration: none" target="_blank">curriculum vitae</a></p>
+    </span>
   </div>
 </body>
 
