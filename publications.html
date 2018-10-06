@@ -5,85 +5,91 @@
 
 <head>
   <title>Kevin Surya - Publications</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
+    html {
       background-color: black;
-      position: absolute;
-      top: 40%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      text-align: left;      
     }
     .navbar {
-      background-color: black;
-      position: absolute;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+      overflow: hidden;
+      position: fixed; 
+      top: 15%;
+      left: 27.5%;
     }
     .navbar a {
+      float: left;
       display: inline;
-      margin-top: 0px;
-      margin-bottom: 24px;
-      margin-left: 0px;
-      margin-right: 24px;
-      text-align: left;
+      margin-right: 16px;
+      color: gray;
       font-family: arial, helvetica, sans-serif;
+      text-align: center;
+      text-decoration: none;
+    }
+    .navbar a:hover {
+      color: gainsboro;
     }
     .active {
-      color: silver;
+      color: gainsboro;
+    }
+    .main {
+      position: fixed;
+      white-space: nowrap;
+      top: 32.5%;
+      left: 27.5%;
+      right: 27.5%;     
+      color: silver;   
+      font-family: "lucida sans unicode", "lucida grande", sans-serif;    
+    }
+    img {
+      float: left;
+      width: 225px;
+      height: 168.75px;
+      margin-bottom: 8px;
+      margin-right: 16px;
     }
     .title {
-      font-family: "lucida sans unicode", "lucida grande", sans-serif;
+      color: gainsboro;
       font-size: 24px;
       font-weight: bold;
-      color: gainsboro;   
-    }
-    .articles {
-      font-family: "lucida sans unicode", "lucida grande", sans-serif;
-      font-size: 16px;
-      color: silver;
-      padding-left: 22px ;
-      text-indent: -22px ;
     }
     .contact {
-      font-family: arial, helvetica, sans-serif;
-      font-size: 13px;
+      position: fixed;
+      white-space: nowrap;
+      bottom: 20%;
+      left: 27.5%;
+      right: 27.5%;   
       color: gray;
+      font-size: 14px;
+      font-family: arial, helvetica, sans-serif;
     }
   </style>
 </head>
 
 <body>
   <div class="navbar">
-    <a href="index.html" style="color: gray; text-decoration: none;" 
-      class="active">ABOUT</a>
-    <a href="research.html" style="color: gray; text-decoration: none;">
-      RESEARCH</a>
-    <a href="publications.html" style="color: gray; text-decoration: none;">
-      PUBLICATIONS</a>
+    <a href="index.html">ABOUT</a>
+    <a href="research.html">RESEARCH</a>
+    <a href="publications.html" style="color: gainsboro">PUBLICATIONS</a>
   </div>
-  <br /><br /><br /><br />
-  <div class="title">
-    PEER-REVIEWED ARTICLES
-  <br />
+  <div class="main">
+    <div class="title">PEER-REVIEWED ARTICLES</div>
+    <br />
+    Rashid, D. J., <u>K. Surya</u>, L. M. Chiappe, N. R. Carroll, K. L. Garrett, 
+      <br /> B. Varghese, A. Bailleul, J. K. O’Connor, S. C. Chapman, and 
+      J. R. Horner. (2018). <br /> Avian tail ontogeny, pygostyle formation, and 
+      interpretation of juvenile <br /> Mesozoic specimens. <i>Scientific 
+      Reports</i> 8: 9014.
+    <br />
+    <a href="2018_rashid_etal_avian_tail_ontogeny.pdf" style="color: lightgray;  
+      text-decoration: none"; target="_blank">PDF</a>
+    <!-- TODO: Figure out how to set up vertical scrolling. -->
   </div>
-  <div class="articles">
-    1. Rashid, D. J., <u>K. Surya</u>, L. M. Chiappe, N. R. Carroll, 
-      K. L. Garrett, B. Varghese, A. Bailleul, J. K. O’Connor, S. C. Chapman, 
-      and J. R. Horner. (2018). Avian tail ontogeny, pygostyle formation, and 
-      interpretation of juvenile Mesozoic specimens. <i>Scientific Reports</i> 
-      8: 9014.
-    <a href="2018_rashid_etal_avian_tail_ontogeny.pdf" style="font-size: 16px; 
-      color: gray; text-decoration: none"; target="_blank">PDF</a>
-  </div>
-  <br /><br /><br />
   <div class="contact">
     Kevin Surya &middot Honors College &middot Montana State University 
-      &middot Bozeman &middot MT 59715 &middot USA <br /> 406 600 8544 
-      &middot kevin.surya@msu.montana.edu
+      &middot Bozeman &middot MT 59717 &middot USA <br /> 406 600 8544 
+      &middot <a href="mailto:kevin.surya@msu.montana.edu" style="color: gray; 
+      text-decoration: none";>kevin.surya@msu.montana.edu</a>
   </div>
 </body>
 
