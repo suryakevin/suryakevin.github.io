@@ -38,9 +38,7 @@
       margin-bottom: 24px;
       margin-left: 0px;
       margin-right: 24px;
-      color: gray;
       text-align: left;
-      text-decoration: none;
       font-family: arial, helvetica, sans-serif;
     }
     .active {
@@ -68,8 +66,10 @@
 <body>
   <ul>
     <li class="active">ABOUT</li>
-    <li>RESEARCH</li>
-    <li>PUBLICATIONS</li>
+    <li><a href="research.html" style="color: gray; text-decoration: none;">
+      RESEARCH</a></li>
+    <li><a href="publications.html" style="color: gray; text-decoration: none;">
+      PUBLICATIONS</a></li>
   </ul>
   <br /><br /><br />
   <img src="profile_picture.jpg" alt="profile picture">
@@ -78,7 +78,7 @@
   </div>
   <div class="bio">
     <a href="cv.pdf" style="font-size: 13px; color: darkgray; 
-      text-decoration: none" target="_blank">curriculum vitae</a>
+      text-decoration: none"; target="_blank">curriculum vitae</a>
     <p>I'm an Indonesian undergraduate student at Montana State University. My 
       research focuses on the dinosaur-bird transition and macroevolutionary 
       modeling.</p>
