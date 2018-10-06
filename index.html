@@ -9,52 +9,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      background: black;
-    }
-    .main {
+      background-color: black;
       position: absolute;
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
-      text-align: center;
-      white-space: nowrap;   
+      text-align: left;      
+    }
+    img {
+      float: left;
+      margin-top: 0px;
+      margin-bottom: 24px;
+      margin-left: 0px;
+      margin-right: 24px;
+      width: 225px;
+      height: 168.75px;
+    }
+    ul {
+      background-color: black;
+      position: sticky;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline;
+      margin-top: 0px;
+      margin-bottom: 24px;
+      margin-left: 0px;
+      margin-right: 24px;
+      color: gray;
+      text-align: left;
+      text-decoration: none;
+      font-family: arial, helvetica, sans-serif;
+    }
+    .active {
+      color: silver;
     }
     .name {
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-family: "lucida sans unicode", "lucida grande", sans-serif;
+      font-size: 24px;
+      font-weight: bold;
       color: gainsboro;   
     }
     .bio {
-      display: flex;
-      flex-flow: row nowrap;
-      font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+      font-family: "lucida sans unicode", "lucida grande", sans-serif;
+      font-size: 16px;
       color: silver;
     }
-    .email-cv {
-      font-family: Arial, helvetica, sans-serif;
-      font-size: 8;
+    .contact {
+      font-family: arial, helvetica, sans-serif;
+      font-size: 13px;
       color: gray;
     }
   </style>
 </head>
 
 <body>
-  <div class="main">
-    <img src="profile_picture.jpg" alt="profile picture" 
-      style="width:200px;height:150px;">
-    <div class="name">
-      <h1>KEVIN SURYA</h1>
-    </div>
-    <div class="bio">
-      I'm an Indonesian undergraduate student at Montana State University <br />
-      My research focuses on the dinosaur-bird transition and macroevolutionary 
-      modeling
-    </div>
-    <br />
-    <span class="email-cv">
-      406 600 8544 &middot kevin.surya@msu.montana.edu &middot <a href="cv.pdf" 
-      style="color: gray; text-decoration: none" target="_blank">curriculum 
-      vitae</a></p>
-    </span>
+  <ul>
+    <li class="active">ABOUT</li>
+    <li>RESEARCH</li>
+    <li>PUBLICATIONS</li>
+  </ul>
+  <br /><br /><br />
+  <img src="profile_picture.jpg" alt="profile picture">
+  <div class="name">
+    KEVIN SURYA
+  </div>
+  <div class="bio">
+    <a href="cv.pdf" style="font-size: 13px; color: darkgray; 
+      text-decoration: none" target="_blank">curriculum vitae</a>
+    <p>I'm an Indonesian undergraduate student at Montana State University. My 
+      research focuses on the dinosaur-bird transition and macroevolutionary 
+      modeling.</p>
+  </div>
+  <br /><br /><br />
+  <div class="contact">
+    Kevin Surya &middot Honors College &middot Montana State University 
+      &middot Bozeman &middot MT 59715 &middot USA <br /> 406 600 8544 
+      &middot kevin.surya@msu.montana.edu
   </div>
 </body>
 
