@@ -25,14 +25,14 @@
       width: 225px;
       height: 168.75px;
     }
-    ul {
+    .navbar {
       background-color: black;
       position: fixed;
       list-style-type: none;
       margin: 0;
       padding: 0;
     }
-    li {
+    .navbar a {
       display: inline;
       margin-top: 0px;
       margin-bottom: 24px;
@@ -64,13 +64,14 @@
 </head>
 
 <body>
-  <ul>
-    <li class="active">ABOUT   </li>
-    <li><a href="research.html" style="color: gray; text-decoration: none;">
-      RESEARCH</a></li>
-    <li><a href="publications.html" style="color: gray; text-decoration: none;">
-      PUBLICATIONS</a></li>
-  </ul>
+  <div class="navbar">
+    <a href="index.html" style="color: gray; text-decoration: none;" 
+      class="active">ABOUT</a>
+    <a href="research.html" style="color: gray; text-decoration: none;">
+      RESEARCH</a>
+    <a href="publications.html" style="color: gray; text-decoration: none;">
+      PUBLICATIONS</a>
+  </div>
   <br /><br /><br />
   <img src="profile_picture.jpg" alt="profile picture">
   <div class="name">

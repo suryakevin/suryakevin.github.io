@@ -16,14 +16,14 @@
       transform: translateX(-50%) translateY(-50%);
       text-align: left;      
     }
-    ul {
+    .navbar {
       background-color: black;
       position: fixed;
       list-style-type: none;
       margin: 0;
       padding: 0;
     }
-    li {
+    .navbar a {
       display: inline;
       margin-top: 0px;
       margin-bottom: 24px;
@@ -45,6 +45,8 @@
       font-family: "lucida sans unicode", "lucida grande", sans-serif;
       font-size: 16px;
       color: silver;
+      padding-left: 22px ;
+      text-indent: -22px ;
     }
     .contact {
       font-family: arial, helvetica, sans-serif;
@@ -55,16 +57,18 @@
 </head>
 
 <body>
-  <ul>
-    <li><a href="index.html" style="color: gray; text-decoration: none;">ABOUT
-      </a></li>
-    <li><a href="research.html" style="color: gray; text-decoration: none;">
-      RESEARCH</a></li>
-    <li class="active">PUBLICATIONS</li>
-  </ul>
+  <div class="navbar">
+    <a href="index.html" style="color: gray; text-decoration: none;" 
+      class="active">ABOUT</a>
+    <a href="research.html" style="color: gray; text-decoration: none;">
+      RESEARCH</a>
+    <a href="publications.html" style="color: gray; text-decoration: none;">
+      PUBLICATIONS</a>
+  </div>
   <br /><br /><br />
   <div class="title">
     PEER-REVIEWED ARTICLES
+  <br />
   </div>
   <div class="articles">
     1. Rashid, D. J., <style="color: white">K. Surya</style>, L. M. Chiappe, 
@@ -72,7 +76,7 @@
       S. C. Chapman, and J. R. Horner. (2018). Avian tail ontogeny, pygostyle 
       formation, and interpretation of juvenile Mesozoic specimens. 
       <i>Scientific Reports</i> 8: 9014.
-    <a href="2018_rashid_etal_avian_tail_ontogeny.pdf" style="font-size: 13px; 
+    <a href="2018_rashid_etal_avian_tail_ontogeny.pdf" style="font-size: 16px; 
       color: gray; text-decoration: none"; target="_blank">PDF</a>
   </div>
   <br /><br /><br />
