@@ -1,96 +1,83 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-  <title>Kevin Surya - Publications</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    html {
-      background-color: black;
-    }
-    .navbar {
-      overflow: hidden;
-      position: fixed; 
-      top: 15%;
-      left: 27.5%;
-    }
-    .navbar a {
-      float: left;
-      display: inline;
-      margin-right: 16px;
-      color: gray;
-      font-family: arial, helvetica, sans-serif;
-      text-align: center;
-      text-decoration: none;
-    }
-    .navbar a:hover {
-      color: gainsboro;
-    }
-    .active {
-      color: gainsboro;
-    }
-    .main {
-      position: fixed;
-      white-space: nowrap;
-      top: 32.5%;
-      left: 27.5%;
-      right: 27.5%;     
-      color: silver;   
-      font-family: "lucida sans unicode", "lucida grande", sans-serif;    
-    }
-    img {
-      float: left;
-      width: 225px;
-      height: 168.75px;
-      margin-bottom: 8px;
-      margin-right: 16px;
-    }
-    .title {
-      color: gainsboro;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    .contact {
-      position: fixed;
-      white-space: nowrap;
-      bottom: 20%;
-      left: 27.5%;
-      right: 27.5%;   
-      color: gray;
-      font-size: 14px;
-      font-family: arial, helvetica, sans-serif;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="navbar">
-    <a href="index.html">ABOUT</a>
-    <a href="research.html">RESEARCH</a>
-    <a href="publications.html" style="color: gainsboro">PUBLICATIONS</a>
-  </div>
-  <div class="main">
-    <div class="title">PEER-REVIEWED ARTICLES</div>
-    <br />
-    Rashid, D. J., <u>K. Surya</u>, L. M. Chiappe, N. R. Carroll, K. L. Garrett, 
-      <br /> B. Varghese, A. Bailleul, J. K. O’Connor, S. C. Chapman, and 
-      J. R. Horner. (2018). <br /> Avian tail ontogeny, pygostyle formation, and 
-      interpretation of juvenile <br /> Mesozoic specimens. <i>Scientific 
-      Reports</i> 8: 9014.
-    <br />
-    <a href="2018_rashid_etal_avian_tail_ontogeny.pdf" style="color: lightgray;  
-      text-decoration: none"; target="_blank">PDF</a>
-    <!-- TODO: Figure out how to set up vertical scrolling. -->
-  </div>
-  <div class="contact">
-    Kevin Surya &middot Honors College &middot Montana State University 
-      &middot Bozeman &middot MT 59717 &middot USA <br /> 406 600 8544 
-      &middot <a href="mailto:kevin.surya@msu.montana.edu" style="color: gray; 
-      text-decoration: none";>kevin.surya@msu.montana.edu</a>
-  </div>
-</body>
-
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Kevin Surya &raquo Publications</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      html {
+        overflow: auto;
+        background-color: black;
+      }
+      body {
+        height: 100%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 25%;
+        padding-right: 25%;
+      }
+      .navbar {
+        position: absolute;
+      }
+      .navbar a {
+        float: left;
+        display: inline;
+        margin-right: 16px;
+        color: gray;
+        font-family: arial, helvetica, sans-serif;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        color: gainsboro;
+      }
+      .main {    
+        color: silver;   
+        font-family: "lucida sans unicode", "lucida grande", sans-serif;
+      }
+      .title {
+        color: gainsboro;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .article {
+        padding-left: 22px;
+        text-indent: -22px;
+      }
+      .contact {
+        position: relative;
+        color: gray;
+        font-size: 14px;
+        font-family: arial, helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html">ABOUT</a>
+      <a href="research.html">RESEARCH</a>
+      <a href="publications.html" style="color: gainsboro;">PUBLICATIONS</a>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="main">
+      <div class="title">PEER-REVIEWED ARTICLES</div>
+      <br />
+      <div class="article">
+        1. Rashid, D. J., <u>K. Surya</u>, L. M. Chiappe, N. R. Carroll, 
+          K. L. Garrett, B. Varghese, A. Bailleul, J. K. O’Connor, 
+          S. C. Chapman, and J. R. Horner. (2018). Avian tail ontogeny, 
+          pygostyle formation, and interpretation of juvenile Mesozoic 
+          specimens. <i>Scientific Reports</i> <b>8</b>: 9014.  
+      <br />
+      <a href="2018_Rashid_etal.pdf" style="color: lightgray;  
+        text-decoration: none"; target="_blank">PDF</a>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="contact">
+      Kevin Surya &middot Honors College &middot Montana State University 
+        &middot Bozeman &middot MT 59717 &middot USA <br /> 406 600 8544 &middot 
+        <a href="mailto:kevin.surya@msu.montana.edu" style="color: gray; 
+        text-decoration: none";>kevin.surya@msu.montana.edu</a>
+    </div>
+  </body>
 </html>
